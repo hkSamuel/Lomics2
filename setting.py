@@ -15,9 +15,9 @@ import re
 import csv
 import argparse
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "api"
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
-var_llm = "openrouter/moonshotai/kimi-k2"
+var_llm = "openrouter/meta-llama/llama-4-maverick"
 var_maxtoken = 20000
 var_temp = 0
 var_max_concurrent_call = 20
@@ -26,7 +26,7 @@ var_iterate_pathway = 10
 var_num_gene = 100
 var_iterate_gene = 3
 var_max_attempt = 3
-lomics = "v1.1"
+lomics = "v2.1"
 current_dir = os.path.dirname(os.path.abspath(__file__))
 path_hgnc = os.path.join(current_dir, "resources", "hgnc_20260206.json")
 path_gmt = os.path.join(current_dir, "resources", "cleaned_wikipathways.gmt")
